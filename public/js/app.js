@@ -1,4 +1,4 @@
-console.log('CLient side js file is loaded! (nigga)')
+//console.log('CLient side js file is loaded! (nigga)')
 
 
 
@@ -27,4 +27,4 @@ weatherForm.addEventListener('submit', (e)=> {
     })
 
 })
-})
+}) 
