@@ -6,7 +6,9 @@ const forecast = require('./utils/forecast')
 
 const express = require('express')
 const { runInNewContext } = require('vm')
+
 const app = express()
+const port = process.env.PORT || 3000 // process.env.PORT kommt von heroku
 
 //Define paths for Express config
 const views_path = path.join(__dirname, '../templates/views')
@@ -100,7 +102,7 @@ app.get('*', (req,res)=> {
 //app.com/help
 //app.com/about
 
- app.listen(3000, ()=> {
-    console.log('server is up on port 3000.')
+ app.listen(port, ()=> {
+    console.log('server is up on port ' + port)
 
  })
